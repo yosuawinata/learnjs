@@ -39,6 +39,10 @@ header {
   margin: 0 0 1rem 0;
 }
 
+#user-goal h3 {
+  font-size: 1.5rem;
+}
+
 #user-goal p {
   font-size: 1.25rem;
   font-weight: bold;

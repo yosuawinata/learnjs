@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 
     <!-- add vuejs in here - without building js -->
-    <script src="https://unpkg.com/vue@next" defer></script>
+    <script src="https://unpkg.com/vue@3.2.36/dist/vue.global.js" defer></script>
     <script src="app.js" defer></script>
 </head>
 <body>
@@ -17,7 +17,13 @@
     </header>
     <section id="user-goal">
         <h2>My Course Goal</h2>
-        <p></p>
+        <p>{{ courseGoal }}</p>
+        <!-- using method -->
+        <p>{{ outputGoal() }}</p>
+
+        <!-- using v-html, be carefull if want use v-html, because open the security issue (XSS attack)-->
+        <!-- <p v-html="outputGoal()"></p> -->
+        <p>Learn more <a v-bind:href="vueLink">about vue</a> </p>
     </section>
 </body>
 </html>

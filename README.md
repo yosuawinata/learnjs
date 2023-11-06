@@ -22,3 +22,6 @@ You will learn about outputting raw HTML content with v-html.
 # assign_01
 This part about assignment to check what we have understood for the given lessons.
 
+# ch_21
+Understand about vue event binding.
+

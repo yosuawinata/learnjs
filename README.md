@@ -28,3 +28,5 @@ Understand about vue event binding.
 # ch_22
 Learn Event and Methods.
 
+# ch_23
+Learn working with event arguments.

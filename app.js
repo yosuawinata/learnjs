@@ -6,14 +6,14 @@ const app = Vue.createApp({
     },
     methods: {
         add(num) {
-            return this.counter = this.counter + 1
+            return this.counter = this.counter + num;
             // you can replace like in below
             // this.counter++
         },
         reduce(num) {
-            return this.counter--
+            return this.counter = this.counter - num;
             // you can replace like in below
-            // this.counter = this.counter - 1
+            // this.counter--
         }
     }
 });

@@ -1,14 +1,17 @@
 const app =  Vue.createApp({
     data() {
         return {
-            // display my name
-            name: 'Yosua Winata',
-            age: 40,
-            ageIn5Y: 40+5
+            // display my name & age
+            name: 'Joshua',
+            age: 40
         }
     },
     methods: {
+        calcAge() {
+            return this.age + 5;
+        },
         randomNo() {
+            // return number between 0 until 1
             return Math.random();
         }
     }

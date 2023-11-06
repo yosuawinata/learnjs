@@ -25,3 +25,6 @@ This part about assignment to check what we have understood for the given lesson
 # ch_21
 Understand about vue event binding.
 
+# ch_22
+Learn Event and Methods.
+

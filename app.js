@@ -1,7 +1,8 @@
 const app = Vue.createApp({
     data() {
         return {
-            counter: 0,
+            // counter: 0,
+            counter: 10, // set the counter 10 to use about v-once
             name: '',
             // the data property to show if the field name is hit by enter (listening on keyboard event)
             confirmedName: '' 

@@ -27,6 +27,8 @@
 
       <!-- default value is left click -->
       <button v-on:click.right="reduce(5)">Substract 5</button>
+      <!-- use v-once -->
+      <p v-once>Starting Counter: {{ counter }}</p>
       <p>Result: {{ counter }}</p>
       <!-- input text using default param -->
       <!-- <input type="text" v-on:input="setName"> -->

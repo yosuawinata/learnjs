@@ -36,3 +36,6 @@ Using the native event object
 
 # ch_25
 Exploring the Native Event Object
+
+# ch_26
+Locking content with v-once

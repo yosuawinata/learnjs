@@ -23,6 +23,12 @@
       <!-- <button v-on:click="counter = counter - 1">Reduce</button> -->
       <button v-on:click="reduce(5)">Substract 5</button>
       <p>Result: {{ counter }}</p>
+      <!-- input text using default param -->
+      <!-- <input type="text" v-on:input="setName"> -->
+      
+      <!-- input text using two param -->
+      <input type="text" v-on:input="setName($event, 'Winz')">
+      <p>Your Name: {{ name }}</p>
     </section>
   </body>
 </html>

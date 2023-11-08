@@ -30,3 +30,6 @@ Learn Event and Methods.
 
 # ch_23
 Learn working with event arguments.
+
+# ch_24
+Using the native event object

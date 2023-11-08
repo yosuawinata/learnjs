@@ -33,3 +33,6 @@ Learn working with event arguments.
 
 # ch_24
 Using the native event object
+
+# ch_25
+Exploring the Native Event Object

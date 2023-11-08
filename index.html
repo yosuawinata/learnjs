@@ -21,14 +21,35 @@
       <!-- <button v-on:click="counter++">Add</button> -->
       <button v-on:click="add(10)">Add 10</button>
       <!-- <button v-on:click="counter = counter - 1">Reduce</button> -->
-      <button v-on:click="reduce(5)">Substract 5</button>
+      
+      <!-- using event modifier when this button is right clicked, so the data deduction will works -->
+      <!-- <button v-on:click.right="reduce(5)">Substract 5</button> -->
+
+      <!-- default value is left click -->
+      <button v-on:click.right="reduce(5)">Substract 5</button>
       <p>Result: {{ counter }}</p>
       <!-- input text using default param -->
       <!-- <input type="text" v-on:input="setName"> -->
       
       <!-- input text using two param -->
-      <input type="text" v-on:input="setName($event, 'Winz')">
-      <p>Your Name: {{ name }}</p>
+      <!-- <input type="text" v-on:input="setName($event, 'Winz')"> -->
+
+      <!-- double event and also listening keyboard when enter button is hit -->
+      <!-- keyup event is triggered when a key is pressed and released again -->
+      <!-- if keyup event from keyboard is not defined, it means from all key is validated -->
+      <input type="text" v-on:input="setName($event, 'Winz')" v-on:keyup.enter="confirmedInput">
+
+      <!-- single event only without keyboard event -->
+      <!-- <p>Your Name: {{ name }}</p> -->
+
+      <!-- listening on keyboard name when the button enter is hit -->
+      <p>Your Name: {{ confirmedName }}</p>
+
+      <!-- thanks to vue.js to add prevent modifier to simply code (use event prevent) -->
+      <form v-on:submit.prevent="submitForm">
+        <input type="text">
+        <button>Sign Up</button>
+      </form>
     </section>
   </body>
 </html>

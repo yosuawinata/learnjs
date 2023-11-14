@@ -1,8 +1,8 @@
 const app = Vue.createApp({
     data() {
         return {
-            userInput: '',
-            confirmedInput: ''
+            output1: '',
+            output2: ''
         }
     },
     methods:{
@@ -10,10 +10,10 @@ const app = Vue.createApp({
             alert('The alert will be displayed!');
         },
         saveInput(event) {
-            this.userInput = event.target.value;
+            this.output1 = event.target.value;
         },
         confirmInput() {
-            this.confirmedInput = this.userInput;
+            this.output2 = this.output1;
         }
     }
 });

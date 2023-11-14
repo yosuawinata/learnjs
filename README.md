@@ -39,3 +39,6 @@ Exploring the Native Event Object
 
 # ch_26
 Locking content with v-once
+
+# assgn_02
+submit the assignment_02

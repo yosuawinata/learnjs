@@ -42,5 +42,11 @@ Locking content with v-once
 
 # assgn_02
 submit the assignment_02
+<<<<<<< HEAD
 changed the following path from: <script src="https://unpkg.com/vue@next" defer></script>
 to <script src="https://unpkg.com/vue@3.4.9/dist/vue.global.js" defer></script>
+=======
+
+# ch_27
+Data binding and event binding is means two-way binding
+>>>>>>> 9bf7cdd (data binding and event binding is equal to way binding)

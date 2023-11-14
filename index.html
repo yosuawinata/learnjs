@@ -15,6 +15,7 @@
   </head>
   <body>
     <header>
+<<<<<<< HEAD
       <h1>Vue Dynamic Styling</h1>
     </header>
     <section id="styling">
@@ -76,6 +77,49 @@
       @click="boxSelected('C')">
     </div>
 
+=======
+      <h1>Vue Events</h1>
+    </header>
+    <section id="events">
+      <h2>Events in Action</h2>
+      <!-- <button v-on:click="counter++">Add</button> -->
+      <button v-on:click="add(10)">Add 10</button>
+      <!-- <button v-on:click="counter = counter - 1">Reduce</button> -->
+      
+      <!-- using event modifier when this button is right clicked, so the data deduction will works -->
+      <!-- <button v-on:click.right="reduce(5)">Substract 5</button> -->
+
+      <!-- default value is left click -->
+      <!-- <button v-on:click.right="reduce(5)">Substract 5</button> -->
+      <button v-on:click="reduce(5)">Substract 5</button>
+      <p>Result: {{ counter }}</p>
+      <!-- input text using default param -->
+      <!-- <input type="text" v-on:input="setName"> -->
+      
+      <!-- input text using two param -->
+      <!-- <input type="text" v-on:input="setName($event, 'Winz')"> -->
+
+      <!-- double event and also listening keyboard when enter button is hit -->
+      <!-- keyup event is triggered when a key is pressed and released again -->
+      <!-- if keyup event from keyboard is not defined, it means from all key is validated -->
+      <!-- <input type="text" v-bind:value="name" v-on:input="setName($event, 'Winz')" v-on:keyup.enter="confirmedInput"> -->
+      <!-- <input type="text" v-bind:value="name" v-on:input="setName($event, 'Winz')" /> -->
+      <!-- use v-model is same with v-bind and v-on:input -->
+      <input type="text" v-model="name" />
+      <button v-on:click="resetInput">Reset Input</button>
+      <!-- single event only without keyboard event -->
+      <!-- <p>Your Name: {{ name }}</p> -->
+
+      <!-- listening on keyboard name when the button enter is hit -->
+      <!-- <p>Your Name: {{ confirmedName }}</p> -->
+      <p>Your Name: {{ name }}</p>
+
+      <!-- thanks to vue.js to add prevent modifier to simply code (use event prevent) -->
+      <!-- <form v-on:submit.prevent="submitForm">
+        <input type="text">
+        <button>Sign Up</button>
+      </form> --> 
+>>>>>>> d74d159 (data binding and event binding is equal to way binding)
     </section>
   </body>
 </html>

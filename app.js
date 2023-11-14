@@ -1,20 +1,50 @@
 const app = Vue.createApp({
     data() {
         return {
-            output1: '',
-            output2: ''
+            counter: 0,
+            name: '',
+            // the data property to show if the field name is hit by enter (listening on keyboard event)
+            confirmedName: '' 
         }
     },
-    methods:{
-        showAlert() {
-            alert('The alert will be displayed!');
+    methods: {
+        // this method is paired for listening keybord event when the enter button is pressed.
+        confirmedInput() {
+            // the goal of confirmedInput is set to this.confirmedName is filled by this.name
+            this.confirmedName = this.name;
         },
-        saveInput(event) {
-            this.output1 = event.target.value;
+        // using javascript modifier
+        // if you use code event modifier from vue, default param can be removed.
+        submitForm() {
+            // add this to modify prevent default (vanilla js)
+            // event.preventDefault();
+            alert('Submitted');
         },
-        confirmInput() {
-            this.output2 = this.output1;
+        // setName method using default param
+        // setName(event) {
+        //     this.name = event.target.value;
+        // },
+        // set method using two param
+        setName(event, lastName) {
+            // return this.name = event.target.value + ' ' + lastName;
+            return this.name = event.target.value;
+        },
+        add(num) {
+            return this.counter = this.counter + num;
+            // you can replace like in below
+            // this.counter++
+        },
+        reduce(num) {
+            return this.counter = this.counter - num;
+            // you can replace like in below
+            // this.counter--
+        },
+        resetInput() {
+            // vanillaJs to make function for reset input button
+            // document.querySelector('input').value = '';
+            this.name = '';
         }
     }
 });
-app.mount('#assignment')
+
+app.mount('#events')

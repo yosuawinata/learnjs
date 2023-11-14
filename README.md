@@ -42,3 +42,6 @@ Locking content with v-once
 
 # assgn_02
 submit the assignment_02
+
+# ch_27
+Data binding and event binding is means two-way binding

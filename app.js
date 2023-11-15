@@ -20,6 +20,18 @@ const app = Vue.createApp({
             // event.preventDefault();
             alert('Submitted');
         },
+        outputFullname() {            
+            // to prove that the performance is impacted when the use method, we can use the log in console.
+            // and that way the method is not the best solution to outputting some dynamically calculated value like this.
+            console.log('Running again...');
+            // to only display if first name in input text is filled, so last name will be displayed.
+            // if the first name is not displayed, so, last name not displayed too.
+            if (this.name === '') {
+                return '';
+            }
+            return this.name + ' ' + 'Winz';
+
+        },
         // setName method using default param
         // setName(event) {
         //     this.name = event.target.value;

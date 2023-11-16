@@ -45,3 +45,9 @@ submit the assignment_02
 
 # ch_27
 Data binding and event binding is means two-way binding
+
+# ch_28
+Methods used for Data binding: How it works.
+
+# ch_29
+Introducing Computed Properties

@@ -112,7 +112,21 @@
 
       <!-- listening on keyboard name when the button enter is hit -->
       <!-- <p>Your Name: {{ confirmedName }}</p> -->
+<<<<<<< HEAD
       <p>Your Name: {{ name }}</p>
+=======
+      <!-- <p>Your Name: {{ name }}</p> -->
+      
+      <!-- but, if you use this, this is trouble, because you combine logic in HTML code  -->
+      <!-- <p> Your Name: {{ name + ' ' + 'Winz' }}</p> -->
+
+      <!-- if we use this, so the new issue is raised, namely performances. -->
+      <!-- <p>Your Name: {{ outputFullname() }}</p> -->
+
+      <!-- you can use computed properly from HMTL code -->
+      <p>Your Name: {{ fullname }}</p>
+
+>>>>>>> 02398cc (introducing computed properties)
 
       <!-- thanks to vue.js to add prevent modifier to simply code (use event prevent) -->
       <!-- <form v-on:submit.prevent="submitForm">

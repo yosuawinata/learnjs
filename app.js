@@ -42,6 +42,17 @@ const app = Vue.createApp({
             confirmedName: '' 
         }
     },
+    // this property like methods, but this is only re-executed if there any updated data dependencies
+    computed: {
+        // we treat the computed properties like data, not a like function
+        fullname() {
+            console.log('Running again from computed...');
+            if (this.name === '') {
+                return '';
+            }
+            return this.name + ' ' + 'Winz';
+        }
+    },
     methods: {
         // this method is paired for listening keybord event when the enter button is pressed.
         confirmedInput() {

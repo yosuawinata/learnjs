@@ -49,4 +49,13 @@ to <script src="https://unpkg.com/vue@3.4.9/dist/vue.global.js" defer></script>
 
 # ch_27
 Data binding and event binding is means two-way binding
+<<<<<<< HEAD
 >>>>>>> 9bf7cdd (data binding and event binding is equal to way binding)
+=======
+
+# ch_28
+Methods used for Data binding: How it works.
+
+# ch_29
+Introducing Computed Properties
+>>>>>>> 15750f0 (introducing computed properties)

@@ -57,3 +57,6 @@ Working with Watchers
 
 # ch_31
 Methods vs Computed Properties vs Watchers
+
+# ch_32
+v-bind and v-on shorthands

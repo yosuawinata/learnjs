@@ -39,11 +39,19 @@
       <!-- keyup event is triggered when a key is pressed and released again -->
       <!-- if keyup event from keyboard is not defined, it means from all key is validated -->
       <!-- <input type="text" v-bind:value="name" v-on:input="setName($event, 'Winz')" v-on:keyup.enter="confirmedInput"> -->
-      <!-- <input type="text" v-bind:value="name" v-on:input="setName($event, 'Winz')" /> -->
+      
+      <!-- v-bind can be replace with : only -->
+      <!-- <input type="text" :value="name" v-on:input="setName($event, 'Winz')" /> -->
+
       <!-- use v-model is same with v-bind and v-on:input -->
       <input type="text" v-model="name" />
       <input type="text" v-model="lastName" />
-      <button v-on:click="resetInput">Reset Input</button>
+      <!-- you can use shorthand with syntax like this -->
+      <!-- using @ to replace v:on -->
+      <button @click="resetInput">Reset Input</button>
+      
+      <!-- in below this use the long format -->
+      <!-- <button v-on:click="resetInput">Reset Input</button> -->
       <!-- single event only without keyboard event -->
       <!-- <p>Your Name: {{ name }}</p> -->
 

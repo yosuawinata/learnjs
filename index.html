@@ -14,66 +14,16 @@
   </head>
   <body>
     <header>
-      <h1>Vue Events</h1>
+      <h1>Reactivity in Action</h1>
     </header>
-    <section id="events">
-      <h2>Events in Action</h2>
-      <!-- <button v-on:click="counter++">Add</button> -->
-      <button v-on:click="add(10)">Add 10</button>
-      <!-- <button v-on:click="counter = counter - 1">Reduce</button> -->
-      
-      <!-- using event modifier when this button is right clicked, so the data deduction will works -->
-      <!-- <button v-on:click.right="reduce(5)">Substract 5</button> -->
-
-      <!-- default value is left click -->
-      <!-- <button v-on:click.right="reduce(5)">Substract 5</button> -->
-      <button v-on:click="reduce(5)">Substract 5</button>
-      <p>Result: {{ counter }}</p>
-      <!-- input text using default param -->
-      <!-- <input type="text" v-on:input="setName"> -->
-      
-      <!-- input text using two param -->
-      <!-- <input type="text" v-on:input="setName($event, 'Winz')"> -->
-
-      <!-- double event and also listening keyboard when enter button is hit -->
-      <!-- keyup event is triggered when a key is pressed and released again -->
-      <!-- if keyup event from keyboard is not defined, it means from all key is validated -->
-      <!-- <input type="text" v-bind:value="name" v-on:input="setName($event, 'Winz')" v-on:keyup.enter="confirmedInput"> -->
-      
-      <!-- v-bind can be replace with : only -->
-      <!-- <input type="text" :value="name" v-on:input="setName($event, 'Winz')" /> -->
-
-      <!-- use v-model is same with v-bind and v-on:input -->
-      <input type="text" v-model="name" />
-      <input type="text" v-model="lastName" />
-      <!-- you can use shorthand with syntax like this -->
-      <!-- using @ to replace v:on -->
-      <button @click="resetInput">Reset Input</button>
-      
-      <!-- in below this use the long format -->
-      <!-- <button v-on:click="resetInput">Reset Input</button> -->
-      <!-- single event only without keyboard event -->
-      <!-- <p>Your Name: {{ name }}</p> -->
-
-      <!-- listening on keyboard name when the button enter is hit -->
-      <!-- <p>Your Name: {{ confirmedName }}</p> -->
-      <!-- <p>Your Name: {{ name }}</p> -->
-      
-      <!-- but, if you use this, this is trouble, because you combine logic in HTML code  -->
-      <!-- <p> Your Name: {{ name + ' ' + 'Winz' }}</p> -->
-
-      <!-- if we use this, so the new issue is raised, namely performances. -->
-      <!-- <p>Your Name: {{ outputFullname() }}</p> -->
-
-      <!-- you can use computed properly from HMTL code -->
-      <p>Your Name: {{ fullname }}</p>
-
-
-      <!-- thanks to vue.js to add prevent modifier to simply code (use event prevent) -->
-      <!-- <form v-on:submit.prevent="submitForm">
-        <input type="text">
-        <button>Sign Up</button>
-      </form> --> 
+    <section id="assignment">
+      <button @click="add(5)">Add 5</button>&nbsp;
+      <button @click="add(1)">Add 1</button>
+      <!-- 1) Connect the buttons and calculate a value (a number) -->
+      <!-- Show "Not there yet" until you reach a result of exactly 37 -->
+      <!-- Show "Too much!" if the result is greater than 37 -->
+      <p>Result: {{ counter }} <i>{{ checkNum() }}</i></p>
+      <!-- 2) Watch for changes in "result" and reset the value to 0 after 5 seconds -->
     </section>
   </body>
 </html>

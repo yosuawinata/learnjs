@@ -22,7 +22,6 @@ You will learn about outputting raw HTML content with v-html.
 # assign_01
 This part about assignment to check what we have understood for the given lessons.
 
-<<<<<<< HEAD
 # ch_21
 Understand about vue event binding.
 
@@ -52,5 +51,9 @@ Methods used for Data binding: How it works.
 
 # ch_29
 Introducing Computed Properties
-=======
->>>>>>> 9520fa2 (assignment vue basic - 01)
+
+# ch_30
+Working with Watchers
+
+# ch_31
+Methods vs Computed Properties vs Watchers

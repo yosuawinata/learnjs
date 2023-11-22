@@ -63,3 +63,6 @@ v-bind and v-on shorthands
 
 # assgn_03
 Finish the task assign 03
+
+# ch_33
+Dynamic Styling with Inline Styles

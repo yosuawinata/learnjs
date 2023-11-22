@@ -1,37 +1,22 @@
 const app = Vue.createApp({
     data() {
         return {
-            counter: 0,
-        }
+            boxASelected: false,
+            boxBSelected: false,
+            boxCSelected: false
+        };
     },
     methods: {
-        add(num) {
-            return this.counter = this.counter + num;
+       boxSelected(box) {
+        if (box === 'A') {
+            this.boxASelected = true;
+        } else if (box === 'B') {
+            this.boxBSelected = true;
+        } else if (box === 'C') {
+            this.boxCSelected = true;
         }
-    },
-    computed: {
-        checking() {
-            if (this.counter < 37) {
-                return 'Not there yet';
-            }
-            else if (this.counter === 37) {
-                return this.counter;
-            }
-            else {
-                return 'Too much!';
-            }
-        }
-    },
-    watch: {
-       checking() {
-            console.log('Run from watcher..')
-            const that = this;
-            // set timer
-            setTimeout(function() {
-                that.counter = 0;
-            }, 5000) //reset value to zero after 5s;
-        }
+       } 
     }
 });
 
-app.mount("#assignment")
+app.mount('#styling');

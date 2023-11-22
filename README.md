@@ -60,3 +60,6 @@ Methods vs Computed Properties vs Watchers
 
 # ch_32
 v-bind and v-on shorthands
+
+# assgn_03
+Finish the task assign 03

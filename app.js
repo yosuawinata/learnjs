@@ -7,18 +7,24 @@ const app = Vue.createApp({
     methods: {
         add(num) {
             return this.counter = this.counter + num;
-        },
-        checkNum() {
+        }
+    },
+    computed: {
+        checking() {
             if (this.counter < 37) {
                 return 'Not there yet';
             }
-            else if (this.counter > 37) {
-                return 'Too much!'
+            else if (this.counter === 37) {
+                return this.counter;
+            }
+            else {
+                return 'Too much!';
             }
         }
     },
     watch: {
-       counter(value) {
+       checking() {
+            console.log('Run from watcher..')
             const that = this;
             // set timer
             setTimeout(function() {

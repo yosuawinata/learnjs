@@ -66,3 +66,6 @@ Finish the task assign 03
 
 # ch_33
 Dynamic Styling with Inline Styles
+
+# ch_34
+Adding CSS classes dynamically

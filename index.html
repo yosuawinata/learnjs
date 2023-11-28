@@ -21,9 +21,37 @@
       <!-- <div class="demo" style="border-color: red;" @click="boxSelected('A')"></div> -->
 
       <!-- but, if you code like in below, this is code dynamicly -->
-      <div class="demo" :style="{borderColor: boxASelected ? 'red' : '#ccc'}" @click="boxSelected('A')"></div>
-      <div class="demo" @click="boxSelected('B')"></div>
-      <div class="demo" @click="boxSelected('C')"></div>
+      <!-- using css inline sometimes can cause some troubles, s -->
+      <!-- <div class="demo" :style="{borderColor: boxASelected ? 'red' : '#ccc'}" @click="boxSelected('A')"></div> -->
+
+      <!-- you can use this way, with add class css in styles.css file,
+        but with this way, more little difficult to read the file-->
+      <!-- <div
+        :class="boxASelected ? 'demo active' : 'demo' "
+        @click="boxSelected('A')">
+      </div> -->
+
+      <!-- with this way,the code more readable -->
+      <!-- <div
+        :class="{demo: true, active: boxASelected}"
+        @click="boxSelected('A')">
+      </div> -->
+
+      <!-- but, the above in way, you always bring the demo class,
+       with this way in below you can separate with demo class to simplify -->
+      <div
+        class="demo" :class="{active: boxASelected}"
+        @click="boxSelected('A')">
+      </div>
+
+      <div
+        class="demo" :class="{active: boxBSelected}"
+        @click="boxSelected('B')">
+      </div>
+      <div
+        class="demo" :class="{active: boxCSelected}"
+        @click="boxSelected('C')">
+      </div>
     </section>
   </body>
 </html>

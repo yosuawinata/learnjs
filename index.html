@@ -39,17 +39,33 @@
 
       <!-- but, the above in way, you always bring the demo class,
        with this way in below you can separate with demo class to simplify -->
-      <div
+      <!-- <div
         class="demo" :class="{active: boxASelected}"
+        @click="boxSelected('A')">
+      </div> -->
+
+      <!-- this way can be used for more complex dynamic class -->
+      <div
+        class="demo" :class="boxAClasses"
         @click="boxSelected('A')">
       </div>
 
-      <div
+      <!-- <div
         class="demo" :class="{active: boxBSelected}"
         @click="boxSelected('B')">
-      </div>
+      </div> -->
       <div
+        class="demo" :class="boxBClasses"
+        @click="boxSelected('B')">
+      </div>
+
+      <!-- <div
         class="demo" :class="{active: boxCSelected}"
+        @click="boxSelected('C')">
+      </div> -->
+
+      <div
+        class="demo" :class="boxCClasses"
         @click="boxSelected('C')">
       </div>
     </section>

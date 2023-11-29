@@ -69,3 +69,7 @@ Dynamic Styling with Inline Styles
 
 # ch_34
 Adding CSS classes dynamically
+
+# ch_35
+Classes & Computed Properties
+

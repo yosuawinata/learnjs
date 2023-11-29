@@ -64,10 +64,17 @@
         @click="boxSelected('C')">
       </div> -->
 
-      <div
+      <!-- <div
         class="demo" :class="boxCClasses"
         @click="boxSelected('C')">
-      </div>
+      </div> -->
+
+      <!-- using dynamic classes: array sntax -->
+      <div
+      :class="['demo', {active: boxCSelected}]"
+      @click="boxSelected('C')">
+    </div>
+
     </section>
   </body>
 </html>

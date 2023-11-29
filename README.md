@@ -73,3 +73,5 @@ Adding CSS classes dynamically
 # ch_35
 Classes & Computed Properties
 
+# ch_36
+Dynamic Classes: Array Syntax

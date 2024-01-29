@@ -1,7 +1,6 @@
 const app = Vue.createApp({
     data() {
         return {
-<<<<<<< HEAD
             boxASelected: false,
             boxBSelected: false,
             boxCSelected: false
@@ -35,9 +34,8 @@ const app = Vue.createApp({
         // give the remark if value has selected
         if (box === 'A') {
             this.boxASelected = !this.boxASelected;
-=======
-            counter: 0,
-            name: '',
+            counter: 0;
+            name: '';
             // the data property to show if the field name is hit by enter (listening on keyboard event)
             confirmedName: '' 
         }
@@ -56,8 +54,8 @@ const app = Vue.createApp({
     methods: {
         // this method is paired for listening keybord event when the enter button is pressed.
         confirmedInput() {
-            // the goal of confirmedInput is set to this.confirmedName is filled by this.name
-            this.confirmedName = this.name;
+        // the goal of confirmedInput is set to this.confirmedName is filled by this.name
+        this.confirmedName = this.name;
         },
         // using javascript modifier
         // if you use code event modifier from vue, default param can be removed.
@@ -65,44 +63,15 @@ const app = Vue.createApp({
             // add this to modify prevent default (vanilla js)
             // event.preventDefault();
             alert('Submitted');
-        },
+        }
         // setName method using default param
         // setName(event) {
         //     this.name = event.target.value;
         // },
         // set method using two param
-        setName(event, lastName) {
-            // return this.name = event.target.value + ' ' + lastName;
-            return this.name = event.target.value;
-        },
-        add(num) {
-            return this.counter = this.counter + num;
-            // you can replace like in below
-            // this.counter++
-        },
-        reduce(num) {
-            return this.counter = this.counter - num;
-            // you can replace like in below
-            // this.counter--
-        },
-        resetInput() {
-            // vanillaJs to make function for reset input button
-            // document.querySelector('input').value = '';
-            this.name = '';
->>>>>>> d74d159 (data binding and event binding is equal to way binding)
-        }
-        else if (box === 'B') {
-            this.boxBSelected = !this.boxBSelected;
-        } else if (box === 'C') {
-            this.boxCSelected = !this.boxCSelected;
-        }
-
-       } 
+         
     }
 });
 
-<<<<<<< HEAD
-app.mount('#styling');
-=======
+// app.mount('#styling');
 app.mount('#events')
->>>>>>> d74d159 (data binding and event binding is equal to way binding)

@@ -6,8 +6,7 @@
     <title>Vue Basics</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet"/>
     <link rel="stylesheet" href="styles.css" />
     <!-- <script src="https://unpkg.com/vue@next" defer></script> -->
     <script src="https://unpkg.com/vue@3.4.9/dist/vue.global.js" defer></script>
@@ -15,7 +14,6 @@
   </head>
   <body>
     <header>
-<<<<<<< HEAD
       <h1>Vue Dynamic Styling</h1>
     </header>
     <section id="styling">
@@ -76,8 +74,6 @@
       :class="['demo', {active: boxCSelected}]"
       @click="boxSelected('C')">
     </div>
-
-=======
       <h1>Vue Events</h1>
     </header>
     <section id="events">
@@ -112,9 +108,7 @@
 
       <!-- listening on keyboard name when the button enter is hit -->
       <!-- <p>Your Name: {{ confirmedName }}</p> -->
-<<<<<<< HEAD
       <p>Your Name: {{ name }}</p>
-=======
       <!-- <p>Your Name: {{ name }}</p> -->
       
       <!-- but, if you use this, this is trouble, because you combine logic in HTML code  -->
@@ -126,14 +120,12 @@
       <!-- you can use computed properly from HMTL code -->
       <p>Your Name: {{ fullname }}</p>
 
->>>>>>> 02398cc (introducing computed properties)
 
       <!-- thanks to vue.js to add prevent modifier to simply code (use event prevent) -->
       <!-- <form v-on:submit.prevent="submitForm">
         <input type="text">
         <button>Sign Up</button>
       </form> --> 
->>>>>>> d74d159 (data binding and event binding is equal to way binding)
     </section>
   </body>
 </html>

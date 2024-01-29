@@ -42,36 +42,5 @@ Locking content with v-once
 
 # assgn_02
 submit the assignment_02
-
-# ch_27
-Data binding and event binding is means two-way binding
-
-# ch_28
-Methods used for Data binding: How it works.
-
-# ch_29
-Introducing Computed Properties
-
-# ch_30
-Working with Watchers
-
-# ch_31
-Methods vs Computed Properties vs Watchers
-
-# ch_32
-v-bind and v-on shorthands
-
-# assgn_03
-Finish the task assign 03
-
-# ch_33
-Dynamic Styling with Inline Styles
-
-# ch_34
-Adding CSS classes dynamically
-
-# ch_35
-Classes & Computed Properties
-
-# ch_36
-Dynamic Classes: Array Syntax
+changed the following path from: <script src="https://unpkg.com/vue@next" defer></script>
+to <script src="https://unpkg.com/vue@3.4.9/dist/vue.global.js" defer></script>

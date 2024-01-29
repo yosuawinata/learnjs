@@ -42,3 +42,5 @@ Locking content with v-once
 
 # assgn_02
 submit the assignment_02
+changed the following path from: <script src="https://unpkg.com/vue@next" defer></script>
+to <script src="https://unpkg.com/vue@3.4.9/dist/vue.global.js" defer></script>
